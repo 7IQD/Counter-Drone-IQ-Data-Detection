@@ -1,0 +1,6 @@
+cd "/c/Users/Ani/Desktop/Ajay Bharatiya/Drone-FFT-Detection"
+cp "/c/Users/Ani/Desktop/Ajay Bharatiya/Drone-FFT-Detection/DFT_Metaphor.pdf" .
+git status  # confirm the file appears in red
+git add DFT_Metaphor.pdf
+git commit -m "Add DFT_Metaphor.pdf write-up in LaTeX format"
+git push
