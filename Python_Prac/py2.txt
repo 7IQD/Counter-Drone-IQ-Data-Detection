@@ -1,0 +1,7 @@
+signal = [0, 0, 1, 1, 0, 1, 0]
+# TASK: Print index when a rising edge occurs (0 → 1)
+# Expected Output: Rising edge at index 2, 5
+for i,j in enumerate(signal):
+    if i==0 and j==1:
+        print(f"Rising edge at index {i}")
+    
