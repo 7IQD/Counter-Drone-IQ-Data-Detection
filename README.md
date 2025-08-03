@@ -1,65 +1,35 @@
-# 🛰️ Counter-Drone IQ Data Detection – DSP & SDR Mission
+# 📡 SDR Counter-Drone Research (Private Repository)
 
-This repository documents a structured, hands-on journey into digital signal processing (DSP) and software-defined radio (SDR) with a focus on **drone signal detection** using IQ data.
-
-The aim is to learn deeply, document well, develop tools, and ultimately publish real-world signal analysis results — all from first principles to deployment.
+This is a **private exploratory repository** for early-stage development of DSP/SDR-based signal processing techniques, including IQ data analysis and lightweight format standardization. The context includes potential applications in counter-drone research.
 
 ---
 
-## 🧭 Project Structure
+## 🚧 Status
 
-| Folder/File | Purpose |
-|-------------|---------|
-| `src/` | Modular Python code for DSP (FFT, filters, IQ tools) |
-| `Python_Prac/` | Short practical scripts to explore NumPy, plotting, etc. |
-| `docs/` | Documentation, categorized DSP PDFs, standards |
-| `docs/DSP_PDF_Library/` | 9-topic categorized DSP reading library |
-| `data/` | Raw and processed IQ files for testing |
-| `experiments/` | Real-world capture and analysis experiments |
-| `tests/` | Unit tests for code in `src/` (TBD) |
-| `roadmap.md` | Mission Control – learning, coding, publication milestones |
-| `Git command.txt` | Handy git command list |
+- 🧪 **Research Phase**  
+- 📝 Draft ideas, code snippets, visualizations under development  
+- 🔐 Repository is private — not ready for public release
 
 ---
 
-## 🧠 Learning Focus
+## 📁 Project Focus Areas
 
-- Understanding IQ data structure and normalization
-- Implementing FFT and visualizing frequency domain
-- Handling modulation, filters, and signal detection
-- Developing Python-based signal tools
-- Real-world SDR experiments using RTL-SDR or HackRF
-- Preparing research-ready documentation and visual output
-
----
-
-## 📚 Resources
-
-See `docs/DSP_PDF_Library/` for categorized readings:
-1. Foundations  
-2. Signal Basics  
-3. NumPy for DSP  
-4. DFT & FFT  
-5. IQ Data  
-6. Modulation  
-7. Filters  
-8. SDR Projects  
-9. Roadmaps
+- IQ data handling and visualization (Python, NumPy, Matplotlib)  
+- Lightweight IQ file format standard proposal  
+- FFT-based signal characterization  
+- SDR experiments (RTL-SDR, HackRF planned)  
+- Application context: Early explorations in drone signal analysis
 
 ---
 
-## 📈 Roadmap
+## ⚠️ Disclaimer
 
-See [`roadmap.md`](roadmap.md) for 12-week learning-to-research strategy.
-
----
-
-## 📦 Requirements
-
-See [`requirements.txt`](requirements.txt) for packages used (NumPy, Matplotlib, etc.).
+> **Not for operational use.**  
+> This repository contains early research material for educational and experimental purposes only. No part of this work is intended for deployment or sensitive field application at this stage.
 
 ---
 
-## 🔐 License
+## 🛡️ Copyright
 
-This is a learning project. Open for non-commercial research, credit encouraged.
+> © 2025 Azzu Bazzu. All rights reserved.  
+> Do not distribute or reproduce without permission.
