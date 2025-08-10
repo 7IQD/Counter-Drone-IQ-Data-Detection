@@ -1,1 +1,0 @@
-# Drone Detection Notes
