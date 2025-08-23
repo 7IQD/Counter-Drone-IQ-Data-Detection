@@ -7,7 +7,7 @@ raw = np.fromfile(filename, dtype=np.uint8)
 print("Length of raw data",len(raw))
 
 raw = raw.astype(np.float32)
-raw = np.round((raw-127.5)/127.5, 2)
+ raw =(raw-127.5)/127.5
 print("Raw:", raw)
 raw0 = raw - raw.mean() 
 print("Raw0",raw0)
