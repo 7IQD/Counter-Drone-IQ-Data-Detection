@@ -1,4 +1,4 @@
-# 📘 Part 1: Filter Theory & Concepts
+# 📘 Chapter 7.1 : Filter Theory & Concepts -  Part I
 
 ## 1. Why Filters?
 

@@ -1,0 +1,19 @@
+# Ignore all large binary IQ files (keep only small examples manually)
+*.iq
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore temporary files
+*.tmp
+*.log
+
+# Ignore system files
+Thumbs.db
+.DS_Store
+
+# Ignore plots if desired (optional)
+plots/
