@@ -11,7 +11,7 @@ numtaps = 51     # Filter length (number of taps)
 # cutoff specified in Hz (since fs is given)
 h_hz = firwin(numtaps, cutoff_hz, fs=fs)
 print(h_hz[:10])  # show first 10 coefficients
-cutoff_norm = cutoff_hz / (fs/2)  # = 1000 / 4000 = 0.25
-h_norm = firwin(numtaps, cutoff_norm)  # no fs this time
-print("First 5 coeffs (Hz method):", h_hz[:5])
-print("First 5 coeffs (Norm method):", h_norm[:5])
+# cutoff_norm = cutoff_hz / (fs/2)  # = 1000 / 4000 = 0.25
+# h_norm = firwin(numtaps, cutoff_norm)  # no fs this time
+# print("First 5 coeffs (Hz method):", h_hz[:5])
+# print("First 5 coeffs (Norm method):", h_norm[:5])
