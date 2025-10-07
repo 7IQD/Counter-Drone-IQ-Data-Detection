@@ -1,11 +1,20 @@
-import numpy as np
-from scipy.signal import fftconvolve
-import matplotlib.pyplot as plt 
+from scipy.signal import firwin, freqz
+
+def get_coef(numtaps, cutoff_hz, fs):
+    """Return FIR low-pass filter coefficients"""
+    return firwin(numtaps, cutoff_hz, fs=fs)
+
+def get_freqz(h_hz, worN=4096, fs=1.0):
+    """Return frequency response of filter"""
+    w, H = freqz(h_hz, worN=worN, fs=fs)
+    return w, H
 
 def rrc_taps(beta, sps, span):
+    """Return Root Raised Cosine filter taps"""
+    import numpy as np
     N = span * sps + 1
     t = (np.arange(N) - (N-1)/2) / sps
-    h = np.zeros_like(t, dtype=float)
+    h = np.zeros_like(t)
     for i, tt in enumerate(t):
         if abs(tt) < 1e-8:
             h[i] = 1.0 - beta + (4*beta/np.pi)
@@ -18,14 +27,4 @@ def rrc_taps(beta, sps, span):
             h[i] = (np.sin(np.pi*tt*(1-beta)) +
                     4*beta*tt*np.cos(np.pi*tt*(1+beta))) / \
                    (np.pi*tt*(1-(4*beta*tt)**2))
-    return t, h / np.sum(h)   # return both time axis and normalized taps
-beta = 0.6
-t, h = rrc_taps(beta=beta, span=12, sps=32)
-
-plt.plot(t, h / np.max(np.abs(h)))
-plt.xlabel("Time (symbols)")
-plt.ylabel("Normalized amplitude")
-plt.title(f"RRC pulse: beta={beta}, span=12, sps=32")
-plt.grid(True)
-plt.show()
-
+    return h / np.sum(h)
